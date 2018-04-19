@@ -10,7 +10,11 @@ console.log(calculateRectangleArea(1.5, 2.5));  // should print 3.75
 console.log(calculateRectangleArea(10, -5));    // should print undefined
 
 function calculateTriangleArea(base, height) {
-return (base * height)/2
+if (base >= 0 && width >= 0)
+return (base * height)/2;
+else {
+  return undefined;
+}
 }
 console.log(calculateTriangleArea(10, 5)); // should print 25
 console.log(calculateTriangleArea(3, 2.5)); // should print 3.75
