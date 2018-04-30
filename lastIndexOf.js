@@ -1,9 +1,9 @@
-function lastIndexOf (array,value) {
-  var index = [];
-  for (var i = 0; i < array.length; i++)
-    if (array[i] === value)
-      index.push(i);
-  return index.pop();
+function lastIndexOf (array, value) {
+  for (var i = array.length - 1; i >= 0; i --) {
+    if (array[i] == value)
+      return i;
+  }
+  return -1
 }
 
 console.log(lastIndexOf([ 0, 1, 4, 1, 2 ], 1));
